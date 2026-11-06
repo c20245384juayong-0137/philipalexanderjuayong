@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+    .btn-primary {
+        @apply bg-red-800 px-6 py-3 text-white transition-colors hover:bg-orange-400 dark:bg-slate-700;
+    }
+}
