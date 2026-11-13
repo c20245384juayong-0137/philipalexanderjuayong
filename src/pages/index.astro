@@ -1,10 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import  Footer  from "../components/Footer.astro";
+import Hero from "./index/sections/Hero.astro";
+import About from "./index/sections/About.astro";
+import Projects from "./index/sections/Projects.astro";
+import Contact from "./index/sections/Contact.astro";
 ---
 
-<BaseLayout>
-
-<h1 class="text-red-600">Philip Alexander P. Juayong</h1>
+<BaseLayout title="Philip Alexander P. Juayong | Portfolio">
+  <main class="mx-auto max-w-5xl px-6 py-12">
+    <Hero />
+    <About />
+    <Projects />
+    <Contact />
+  </main>
 </BaseLayout>

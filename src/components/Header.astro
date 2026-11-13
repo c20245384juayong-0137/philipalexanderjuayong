@@ -1,27 +1,36 @@
-<header>
-    <nav class="mx-12.5 flex items-center justify-between max-[600px]:flex-col max-[600px]:gap-[15px]">
-        <span>@Philip Alexander</span>
+<header class="sticky top-0 z-10 border-b border-slate-200 bg-white/80 backdrop-blur-sm dark:border-slate-700 dark:bg-slate-900/80">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 max-[600px]:flex-col max-[600px]:gap-[15px]">
+    <a href="#home" class="text-lg font-semibold tracking-tight text-slate-900 dark:text-white">@Philip Alexander</a>
 
-        <ul class="m-0 flex list-none gap-5 p-0 max-[600px]:flex-col max-[600px]:text-center">
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#services">Services</a>
-            </li>
-            <li>
-                <a href="#contact">Contact Me</a>
-            </li>
-        </ul>
-    </nav>
+    <ul class="m-0 flex list-none gap-5 p-0 max-[600px]:flex-col max-[600px]:text-center">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <button
+      id="darkModeToggle"
+      type="button"
+      aria-pressed="true"
+      class="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium transition hover:border-red-400 dark:border-slate-600"
+    >
+      Use light theme
+    </button>
+  </nav>
 </header>
 
 <style>
-    nav a {
-        transition: color 0.5s;
-    }
+  nav a {
+    transition: color 0.3s ease;
+  }
 
-    nav a:hover {
-        color: pink;
-    }
+  nav a:hover {
+    color: #ec4899;
+  }
 </style>
